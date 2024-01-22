@@ -11,14 +11,15 @@
   <input type="text" id ="name" placeholder="Enter your name">
   <select id="gender">
     <option value="Male">Male</option>
-    <option value="Female">Male</option>
+    <option value="Female">Female</option>
   </select>
   <button onclick="Display()">Apply</button>
 </body>
 </html>
 <script>
-    let inputName = document.getElementById
+         let displayField =  document.getElementById("display"); 
         function Display(){
-
+            displayField.textContent = document.getElementById("name").value + " ";
+            displayField.textContent +=  document.getElementById("gender").value;
         }
 </script>
