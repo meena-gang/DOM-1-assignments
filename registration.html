@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<input type="text" name="name" id="name">
+	<select id="gender">
+		<option value="">--</option>
+		<option value="male">M</option>
+		<option value="female">F</option>
+	</select>
+	<input type="text" name="email" id="email">
+	<input type="text" name="mobile" id="mobile">
+	<hr>
+	<h1 id="dName">NAME</h1>
+	<h2 id="dGender">GENDER</h2>
+	<h3 id="dEmail">EMAIL</h3>
+	<h4 id="dMobile">MOBILE</h4>
+	<hr>
+	<button onclick="showName()">NAME</button>
+	<button onclick="showGender()">GENDER</button>
+	<button onclick="showEmail()">EMAIL</button>
+	<button onclick="showMobile()">MOBILE</button>
+	<button onclick="resetForm()">RESET FORM</button>
+	<button onclick="resetDisplay()">RESET DISPLAY</button>
+	<script type="text/javascript">
+        let name = document.getElementById("name");
+        let a = document.getElementById("dName");
+        let gender = document.getElementById("gender");
+        let b = document.getElementById("dGender");
+        let email = document.getElementById("email");
+        let c = document.getElementById("dEmail");
+        let mobile = document.getElementById("mobile");
+        let d = document.getElementById("dMobile");
+		function showName() {
+			name1 = name.value;
+            a.innerText = name1;
+
+		}
+
+		function showGender() {
+			gender1= gender.value;
+            b.innerText = gender1;
+
+		}
+
+		function showEmail() {
+			email1 = email.value;
+            c.innerText = email1;
+
+		}
+
+		function showMobile() {
+			mobile1 = mobile.value;
+            d.innerText = mobile1;
+            
+
+		}
+
+		function resetForm() {
+			
+            name.value = "";
+            gender.value = "";
+            email.value = "";
+            mobile.value = "";
+		}
+
+		function resetDisplay() {
+			a.innerText = "";
+            b.innerText = "";
+            c.innerText = "";
+            d.innerText = "";
+            console.log(a.innerText);
+
+		}
+	</script>
+</body>
+</html>
